@@ -19,14 +19,16 @@ RUN sed -i 's|/var/www/html|/var/www/html/public|g' /etc/apache2/sites-available
 # Enable Apache mod_rewrite (useful for clean URLs if needed later)
 RUN a2enmod rewrite
 
-# Set proper permissions for the data directory
-# www-data is the user Apache runs as
-# 775 means: owner can read/write/execute, group can read/write/execute, others can read/execute
-RUN chown -R www-data:www-data /var/www/html/data && \
-    chmod -R 775 /var/www/html/data
+# Copy and configure the entrypoint script
+# This script sets permissions AFTER volumes are mounted (at runtime, not build time)
+COPY docker-entrypoint.sh /usr/local/bin/
+RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 
 # Expose port 80 (the default HTTP port)
 EXPOSE 80
+
+# Use entrypoint to handle runtime setup (permissions)
+ENTRYPOINT ["docker-entrypoint.sh"]
 
 # Start Apache in the foreground
 CMD ["apache2-foreground"]
