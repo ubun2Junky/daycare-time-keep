@@ -1,0 +1,100 @@
+{
+    "month": "2025-11",
+    "records": [
+        {
+            "id": "rec_1762999809_5717",
+            "child_id": "child_001",
+            "date": "2025-11-12",
+            "check_in_time": "12:10:09",
+            "check_out_time": "18:13:37",
+            "duration_hours": 6.06,
+            "overage_minutes": 0,
+            "overage_charge": 0,
+            "checked_in_by": "parent",
+            "checked_out_by": "parent",
+            "notes": ""
+        },
+        {
+            "id": "rec_1762999814_6896",
+            "child_id": "child_002",
+            "date": "2025-11-12",
+            "check_in_time": "18:10:14",
+            "check_out_time": "21:48:40",
+            "duration_hours": 3.64,
+            "overage_minutes": 0,
+            "overage_charge": 0,
+            "checked_in_by": "parent",
+            "checked_out_by": "parent",
+            "notes": ""
+        },
+        {
+            "id": "rec_1763001757_1904",
+            "child_id": "child_001",
+            "child_name": "Emma Smith",
+            "date": "2025-11-11",
+            "check_in_time": "07:03",
+            "check_out_time": "16:22",
+            "duration_hours": 9.32,
+            "overage_minutes": 49,
+            "overage_charge": 49,
+            "created_at": "2025-11-12 21:42:37",
+            "created_by": "staff"
+        },
+        {
+            "id": "rec_1763001786_9538",
+            "child_id": "child_002",
+            "child_name": "Noah Smith",
+            "date": "2025-11-11",
+            "check_in_time": "07:34",
+            "check_out_time": "16:11",
+            "duration_hours": 8.62,
+            "overage_minutes": 7,
+            "overage_charge": 7,
+            "created_at": "2025-11-12 21:43:06",
+            "created_by": "staff"
+        },
+        {
+            "id": "rec_1763002215_3991",
+            "child_id": "child_002",
+            "date": "2025-11-12",
+            "check_in_time": "19:50:15",
+            "check_out_time": "19:50:18",
+            "duration_hours": 0,
+            "overage_minutes": 0,
+            "overage_charge": 0,
+            "checked_in_by": "parent",
+            "checked_out_by": "parent",
+            "notes": ""
+        },
+        {
+            "id": "rec_1763090840_7536",
+            "child_id": "child_001",
+            "date": "2025-11-13",
+            "check_in_time": "20:27:20",
+            "check_out_time": "21:43:29",
+            "duration_hours": 1.27,
+            "overage_minutes": 0,
+            "overage_charge": 0,
+            "checked_in_by": "parent",
+            "checked_out_by": "parent",
+            "notes": "",
+            "late_pickup_minutes": 314,
+            "late_pickup_charge": 314
+        },
+        {
+            "id": "rec_1763090842_1725",
+            "child_id": "child_002",
+            "date": "2025-11-13",
+            "check_in_time": "20:27:22",
+            "check_out_time": "21:43:40",
+            "duration_hours": 1.27,
+            "overage_minutes": 0,
+            "overage_charge": 0,
+            "checked_in_by": "parent",
+            "checked_out_by": "parent",
+            "notes": "",
+            "late_pickup_minutes": 314,
+            "late_pickup_charge": 314
+        }
+    ]
+}

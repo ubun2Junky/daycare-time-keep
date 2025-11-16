@@ -1,0 +1,11 @@
+# Docker Ignore File
+#
+# This tells Docker which files NOT to include when building the image.
+# This makes the build faster and the image smaller.
+
+.git
+.gitignore
+README.md
+.DS_Store
+*.md
+.env

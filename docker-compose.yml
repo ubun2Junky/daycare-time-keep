@@ -1,0 +1,34 @@
+# Docker Compose Configuration
+#
+# This file makes it easy to run your application with a single command.
+# It defines how your container should be built and run.
+
+version: '3.8'
+
+services:
+  # The main application service
+  daycare:
+    # Build the Docker image from the Dockerfile in the current directory
+    build: .
+
+    # Name the container for easy identification
+    container_name: daycare_timekeeper
+
+    # Map port 8080 on your computer to port 80 in the container
+    # This means you'll access the app at http://localhost:8080
+    ports:
+      - "8080:80"
+
+    # Mount the data directory as a volume
+    # This keeps your data persistent even if you restart the container
+    # Changes to files in ./data on your computer will be reflected in the container
+    volumes:
+      - ./data:/var/www/html/data
+
+    # Restart the container automatically if it crashes
+    restart: unless-stopped
+
+    # Set environment variables (optional)
+    environment:
+      # You can add environment variables here if needed
+      - TZ=America/Denver

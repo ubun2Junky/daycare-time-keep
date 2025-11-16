@@ -1,0 +1,8 @@
+{
+    "daycare_closing_time": "16:30:00",
+    "max_hours_per_day": 8.5,
+    "overage_rate_per_minute": 1.00,
+    "late_pickup_rate_per_minute": 1.00,
+    "timezone": "America/Denver",
+    "daycare_name": "Aracely's Daycare"
+}

@@ -1,0 +1,28 @@
+# Apache Configuration for Daycare Timekeeper
+#
+# This file configures Apache settings for better security and performance
+
+# Prevent directory listing
+Options -Indexes
+
+# Enable RewriteEngine (for clean URLs if needed)
+RewriteEngine On
+
+# Redirect to HTTPS if available (commented out for local development)
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Security headers
+<IfModule mod_headers.c>
+    # Prevent clickjacking
+    Header set X-Frame-Options "SAMEORIGIN"
+
+    # Prevent MIME type sniffing
+    Header set X-Content-Type-Options "nosniff"
+
+    # Enable XSS protection
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Set default error pages (optional)
+ErrorDocument 404 /index.php

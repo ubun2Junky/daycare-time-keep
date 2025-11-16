@@ -1,0 +1,19 @@
+{
+    "comment": "PIN for both test accounts is '123456' - Change these in production!",
+    "staff": [
+        {
+            "id": "staff_001",
+            "name": "Admin User",
+            "pin_hash": "$2y$10$/w6xV659VdNdsErlGo7gT.5kKTM94kzbZ/hRN.WAvUGbmZI3CF3DW",
+            "role": "admin",
+            "created_at": "2025-01-01"
+        },
+        {
+            "id": "staff_002",
+            "name": "Staff Member",
+            "pin_hash": "$2y$10$D2utBUuDS8XIeRH1jkFig.r7cZaMO3dfnmEP95EhcCmBQUOE/Nb2O",
+            "role": "staff",
+            "created_at": "2025-01-01"
+        }
+    ]
+}
